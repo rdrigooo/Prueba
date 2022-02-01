@@ -2,12 +2,16 @@ package vista;
 
 import java.util.Scanner;
 
+import servicio.ClienteServicio;
+import servicio.ExportadorCsv;
+import servicio.ExportadorTxt;
+
 public class Menu {
 
 	private ClienteServicio clienteServicio;
 	private ArchivoServicio archivoServicio;
-	private ExportarCsv exportadorCsv;
-	private ExportarTxt exportarTxt;
+	private ExportadorCsv exportarCsv;
+	private ExportadorTxt exportarTxt;
 	private String fileName = "Clientes";
 	private String fileName1 = "DBClientes.csv";
 	private Scanner scanner;
